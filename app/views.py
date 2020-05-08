@@ -23,3 +23,7 @@ def login():
         print("Nueva sesión creada!")
 
     return render_template('auth/login.html', title='Login', form=form)
+@page.route('/register')
+def register():
+    return render_template('auth/register.html', title='Registro',
+                           form=form)
